@@ -2,11 +2,11 @@ package com.in28minutes.learn_spring_framework.game;
 
 public class GameRunner {
 
-    private MarioGame marioGame;
-    public GameRunner(MarioGame marioGame) {
-        //TODO Auto-generated constructor stub
-        this.marioGame = marioGame;
-    }
+    // private MarioGame marioGame;
+    // public GameRunner(MarioGame marioGame) {
+    //     //TODO Auto-generated constructor stub
+    //     this.marioGame = marioGame;
+    // }
 
     // private SuperContraGame superContraGame;
     // public GameRunner(SuperContraGame superContraGame) {
@@ -18,16 +18,20 @@ public class GameRunner {
     //     this.pacmanGame = pacmanGame;
     // }
 
+    private GamingConsole game;
+    public GameRunner(GamingConsole game) {
+        this.game = game;
+    }
 
     public void run() {
 
-        System.out.println("\n***************\nRunning Game: " + 
-                            marioGame + 
-                            "\n***************\n");
-        marioGame.up();
-        marioGame.down();
-        marioGame.left();
-        marioGame.right();
+        // System.out.println("\n***************\nRunning Game: " + 
+        //                     marioGame + 
+        //                     "\n***************\n");
+        // marioGame.up();
+        // marioGame.down();
+        // marioGame.left();
+        // marioGame.right();
 
         // System.out.println("\n***************\nRunning Game: " + 
         //                     superContraGame + 
@@ -44,6 +48,14 @@ public class GameRunner {
         // pacmanGame.down();
         // pacmanGame.left();
         // pacmanGame.right();
+
+        System.out.println("\n***************\nRunning Game: " + 
+                            game + 
+                            "\n***************\n");
+        game.up();
+        game.down();
+        game.left();
+        game.right();
     }
 
 }
